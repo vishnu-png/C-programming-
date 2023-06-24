@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+//printf("Harsha")
+    int n, i;
+    int fib1 = 0, fib2 = 1, fib3;
+    
+    printf("Enter the number of Fibonacci numbers to print: ");
+    scanf("%d", &n);
+    
+    printf("%d %d ", fib1, fib2); // Print the first two numbers
+    
+    for (i = 3; i <= n; i++) {
+        fib3 = fib1 + fib2;
+        printf("%d ", fib3);
+        fib1 = fib2;
+        fib2 = fib3;
+    }
+    
+    printf("\n");
+    
+    return 0;
+}
