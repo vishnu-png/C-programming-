@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+//printf("Harsha")
+    int num, sum = 0;
+    
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+    
+    // Find the sum of the factors of the number
+    for (int i = 1; i < num; i++) {
+        if (num % i == 0) {
+            sum += i;
+        }
+    }
+    
+    // Check if the sum of the factors is equal to the number itself
+    if (sum == num) {
+        printf("%d is a perfect number", num);
+    } else {
+        printf("%d is not a perfect number", num);
+    }
+    
+    return 0;
+}
