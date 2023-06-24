@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+//printf("Harsha")
+    int n, factorial = 1;
+    
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    
+    if (n < 0) {
+        printf("Error: factorial of negative number doesn't exist.");
+        return 0;
+    }
+    
+    for (int i = 1; i <= n; i++) {
+        factorial *= i;
+    }
+    
+    printf("%d! = %d", n, factorial);
+    
+    return 0;
+}
