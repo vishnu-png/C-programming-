@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+//printf("Harsha")
+    int n;
+    
+    printf("Enter a value for n: ");
+    scanf("%d", &n);
+
+    printf("The first %d natural numbers are: ", n);
+
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", i);
+    }
+
+    return 0;
+}
